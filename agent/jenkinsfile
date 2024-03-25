@@ -1,0 +1,24 @@
+pipeline{
+    agent any 
+    stages{
+        stage('biuld'){
+            steps{
+                sh ' sleep 10'
+            }
+        }
+        stage('test'){
+            steps{
+                sh '''
+                #!/bin/bash
+                pwd
+                sleep 10
+                '''
+            }
+        }
+        stage('exxute'){
+            steps{
+                sh ' sleep 10'
+            }
+        }
+    }
+}     
