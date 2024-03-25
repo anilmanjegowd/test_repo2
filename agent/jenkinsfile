@@ -8,11 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                sh '''
-                #!/bin/bash
-                pwd
-                sleep 10
-                '''
+                sh  'sleep 10'
             }
         }
         
