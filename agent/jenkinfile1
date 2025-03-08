@@ -1,0 +1,16 @@
+pipeline {
+    agent any 
+    stages {
+        stage('biuld') {
+            steps {
+                sh 'sleep 10'
+            }
+        }
+        stage('test') {
+            steps {
+                sh  'sleep 10'
+            }
+        }
+        
+    }
+}     
